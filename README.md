@@ -1,5 +1,3 @@
-# Borderlands 3 Mod Backup
-
 This is just a backup of my Modded **B O R D E R L ... 3** mod experience (yes i dont want to say the name of the game because i dont want this repo to be a replacement from their original creators), with some tweaks here and there like some improvements how the sniper/shotgun works.
 
 ---
