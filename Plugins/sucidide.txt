@@ -1,0 +1,158 @@
+###
+### Name: 4 Player Enemy Health in 1P, 2P & 3P Lobbies
+### Version: 2.1.1
+### Author: CZ47
+### Contact: =]#7647
+### Categories: mode-balance, scaling, gameplay, enemy
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### Enemy health and damage is scaled up to as if you were 4 player coop in 1P, 2P and 3P lobbies.
+### This affects both Regular Playthroughs and Mayhem Mode.
+###
+
+
+### Solo Lobby
+## Enemy Damage
+# NVHM (OG Value: 0.75)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,OnePlayer_PT1,0,,(BaseValueConstant=2.25,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Value: 0.9)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,OnePlayer_PT2,0,,(BaseValueConstant=2.7,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+### Enemy Health
+## NVHM (OG Health: 1.0)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,OnePlayer_PT1,0,,(BaseValueConstant=0.03,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#
+## TVHM (OG Health: 1.0)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,OnePlayer_PT2,0,,(BaseValueConstant=0.03,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#
+#
+### Boss Enemy Health
+## NVHM (OG Health: 1.0)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,OnePlayer_PT1,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#
+## TVHM (OG Health: 1.0)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,OnePlayer_PT2,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+
+
+### 2P lobbies
+## Enemy Damage
+# NVHM (OG Value: 0.9)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,TwoPlayers_PT1,0,,(BaseValueConstant=2.7,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Value: 1.1)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,TwoPlayers_PT2,0,,(BaseValueConstant=3.3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+### Enemy Health
+## NVHM (OG Health: 1.3)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,TwoPlayers_PT1,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#
+## TVHM (OG Health: 1.3)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,TwoPlayers_PT2,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#
+#
+### Boss Enemy Health
+## NVHM (OG Health: 1.4)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,TwoPlayers_PT1,0,,(BaseValueConstant=1.25,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#
+## TVHM (OG Health: 1.4)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,TwoPlayers_PT2,0,,(BaseValueConstant=1.25,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+
+
+### 3P Lobbies
+## Enemy Damage
+# NVHM (OG Value: 1.05)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,ThreePlayers_PT1,0,,(BaseValueConstant=3.15,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Value: 1.3)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,ThreePlayers_PT2,0,,(BaseValueConstant=3.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+### Enemy Health
+## NVHM (OG Health: 1.6)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,ThreePlayers_PT1,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#
+## TVHM (OG Health: 1.6)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,ThreePlayers_PT2,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#
+#
+### Boss Enemy Health
+# NVHM (OG Health: 1.7)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,ThreePlayers_PT1,0,,(BaseValueConstant=1.25,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Health: 1.7)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,ThreePlayers_PT2,0,,(BaseValueConstant=1.25,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Unlock all inventory slots right from the start of the game (EARLY BLOOMER)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/InventorySlots/BPInvSlot_Weapon3.BPInvSlot_Weapon3,InitiallyEnabled,0,,True
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/InventorySlots/BPInvSlot_Weapon4.BPInvSlot_Weapon4,InitiallyEnabled,0,,True
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/_Data/BPInvSlot_ClassMod.BPInvSlot_ClassMod,InitiallyEnabled,0,,True
+SparkPatchEntry,(1,1,0,),/Game/Gear/Artifacts/_Design/_Data/BPInvSlot_Artifact.BPInvSlot_Artifact,InitiallyEnabled,0,,True
+
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalHealthPerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,5000.0
+
+# SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Global_Scalar_Formulas.DataTable_Global_Scalar_Formulas,Player_DamageScalar_Part1,Multiplier,0,,()
+# SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Global_Scalar_Formulas.DataTable_Global_Scalar_Formulas,Player_DamageScalar_Part1,Level,0,,()
+# SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Global_Scalar_Formulas.DataTable_Global_Scalar_Formulas,Player_DamageScalar_Part1,Power,0,,()
+
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerWeaponDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,1.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerSkillDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,28.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerMeleeDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,5.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerGrenadeModDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,20.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerShieldDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,20.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerClassModDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,20.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerArtifactDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,10.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerSlideDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,10.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerGroundSlamDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,100.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,VehicleRammingDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,2.8
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,VehicleWeaponDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,1.28
+
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_EnemyHealthBase,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,1
+
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,Common,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.0
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,UnCommon,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.05
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,Rare,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.15
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,VeryRare,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.25
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,Legendary,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.50
+
+#SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ItemScore/WeaponItemScore/Att_WeaponPart_ItemScore.Att_WeaponPart_ItemScore:BP_ConstantValueResolver_C_0,Value,0,,(BaseValueConstant=1.00)
+#SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ItemScore/WeaponItemScore/Att_WeaponPart_ItemScore_EndGame.Att_WeaponPart_ItemScore_EndGame:BP_ConstantValueResolver_C_0,Value,0,,(BaseValueConstant=1.00)
+#SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler.Att_UniversalBalanceScaler:BP_ConstantValueResolver_C_0,Value,0,,(BaseValueConstant=1.00)
+
+#SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/Att_EnemyHealth_GlobalBase.Att_EnemyHealth_GlobalBase:BP_ConstantValueResolver_C_0,Value,BaseValueConstant,0,,100XXXX
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_WeaponPlayer.Att_Calc_Damage_WeaponPlayer:ValueResolver_BalanceFormulaAttributeValueResolver,Value,0,,(Multiplier=(DataTableValue=(DataTable=DataTable_Damage_GlobalBase'"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"',RowName=PlayerWeaponDamage,ValueName=Base_2_5C32556442B4DA4D7EAE1A8610E0A950)),Level=(BaseValueAttribute=ConstantAttributeValueResolver'"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler"',BaseValueScale=0.92),Power=(BaseValueAttribute=ActorAttributeContextResolver'"/Game/GameData/Attributes/Att_WeaponExperienceLevel"',BaseValueScale=75.0))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_GrenadeMod.Att_Calc_Damage_GrenadeMod:ValueResolver_BalanceFormulaAttributeValueResolver,Value,0,,(Multiplier=(DataTableValue=(DataTable=DataTable_Damage_GlobalBase'"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"',RowName=PlayerGrenadeModDamage,ValueName=Base_2_5C32556442B4DA4D7EAE1A8610E0A950)),Level=(BaseValueAttribute=ConstantAttributeValueResolver'"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler"',BaseValueScale=0.92),Power=(BaseValueAttribute=ActorAttributeContextResolver'"/Game/GameData/Attributes/Att_GrenadeMod_ItemLevel"',BaseValueScale=75.0))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_Artifact.Att_Calc_Damage_Artifact:ValueResolver_BalanceFormulaAttributeValueResolver,Value,0,,(Multiplier=(DataTableValue=(DataTable=DataTable_Damage_GlobalBase'"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"',RowName=PlayerArtifactDamage,ValueName=Base_2_5C32556442B4DA4D7EAE1A8610E0A950)),Level=(BaseValueAttribute=ConstantAttributeValueResolver'"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler"',BaseValueScale=0.92),Power=(BaseValueAttribute=ActorAttributeContextResolver'"/Game/GameData/Attributes/Att_Artifact_ItemLevel"',BaseValueScale=75.0))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_GroundSlamPlayer.Att_Calc_Damage_GroundSlamPlayer:ValueResolver_BalanceFormulaAttributeValueResolver,Value,0,,(Multiplier=(DataTableValue=(DataTable=DataTable_Damage_GlobalBase'"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"',RowName=PlayerGroundSlamDamage,ValueName=Base_2_5C32556442B4DA4D7EAE1A8610E0A950)),Level=(BaseValueAttribute=ConstantAttributeValueResolver'"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler"',BaseValueScale=0.92),Power=(BaseValueAttribute=ActorAttributeContextResolver'"/Game/GameData/Attributes/Att_PawnExperienceLevel"',BaseValueScale=75.0))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_MeleePlayer.Att_Calc_Damage_MeleePlayer:ValueResolver_BalanceFormulaAttributeValueResolver,Value,0,,(Multiplier=(DataTableValue=(DataTable=DataTable_Damage_GlobalBase'"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"',RowName=PlayerMeleeDamage,ValueName=Base_2_5C32556442B4DA4D7EAE1A8610E0A950)),Level=(BaseValueAttribute=ConstantAttributeValueResolver'"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler"',BaseValueScale=0.92),Power=(BaseValueAttribute=ActorAttributeContextResolver'"/Game/GameData/Attributes/Att_PawnExperienceLevel"',BaseValueScale=75.0))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_ShieldMod.Att_Calc_Damage_ShieldMod:ValueResolver_BalanceFormulaAttributeValueResolver,Value,0,,(Multiplier=(DataTableValue=(DataTable=DataTable_Damage_GlobalBase'"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"',RowName=PlayerShieldDamage,ValueName=Base_2_5C32556442B4DA4D7EAE1A8610E0A950)),Level=(BaseValueAttribute=ConstantAttributeValueResolver'"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler"',BaseValueScale=0.92),Power=(BaseValueAttribute=ActorAttributeContextResolver'"/Game/GameData/Attributes/Att_Shield_ItemLevel"',BaseValueScale=75.0))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_SkillsPlayer.Att_Calc_Damage_SkillsPlayer:ValueResolver_BalanceFormulaAttributeValueResolver,Value,0,,(Multiplier=(DataTableValue=(DataTable=DataTable_Damage_GlobalBase'"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"',RowName=PlayerSkillDamage,ValueName=Base_2_5C32556442B4DA4D7EAE1A8610E0A950)),Level=(BaseValueAttribute=ConstantAttributeValueResolver'"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler"',BaseValueScale=0.92),Power=(BaseValueAttribute=ActorAttributeContextResolver'"/Game/GameData/Attributes/Att_PawnExperienceLevel"',BaseValueScale=75.0))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_SlidePlayer.Att_Calc_Damage_SlidePlayer:ValueResolver_BalanceFormulaAttributeValueResolver,Value,0,,(Multiplier=(DataTableValue=(DataTable=DataTable_Damage_GlobalBase'"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"',RowName=PlayerSlideDamage,ValueName=Base_2_5C32556442B4DA4D7EAE1A8610E0A950)),Level=(BaseValueAttribute=ConstantAttributeValueResolver'"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler"',BaseValueScale=0.92),Power=(BaseValueAttribute=ActorAttributeContextResolver'"/Game/GameData/Attributes/Att_PawnExperienceLevel"',BaseValueScale=75.0))
+
+#((
+#	Multiplier=((
+#		DataTableValue=((
+#			DataTable=(DataTable_Damage_GlobalBase"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"),
+#			RowName="PlayerWeaponDamage",
+#			ValueName="Base_2_5C32556442B4DA4D7EAE1A8610E0A950"
+#		))
+#	)),
+#	Level=((
+#		BaseValueAttribute=(ConstantAttributeValueResolver"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler")
+#	)),
+#	Power=((
+#		BaseValueAttribute=(ActorAttributeContextResolver"/Game/GameData/Attributes/Att_WeaponExperienceLevel")
+#	))
+#))
+
+#SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_WeaponPlayer.Att_Calc_Damage_WeaponPlayer:ValueResolver_BalanceFormulaAttributeValueResolver,Value.Multiplier,0,,((DataTableValue=(DataTable=(DataTable"/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase"),RowName="PlayerWeaponDamage",ValueName="Base_2_5C32556442B4DA4D7EAE1A8610E0A950")))
+#SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Calc/Att_Calc_Damage_WeaponPlayer.Att_Calc_Damage_WeaponPlayer:ValueResolver_BalanceFormulaAttributeValueResolver,Value.Level,0,,((BaseValueAttribute=(ConstantAttributeValueResolver"/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler")))

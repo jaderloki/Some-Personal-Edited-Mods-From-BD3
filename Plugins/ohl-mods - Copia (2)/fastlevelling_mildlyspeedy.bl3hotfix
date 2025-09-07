@@ -1,0 +1,21 @@
+@title Fast Levelling: Mildly Speedy Variant
+@version 1.0.0
+@author hallowfiend
+@contact-discord @hallowlock
+@categories cheat
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+### I wanted a way to more quickly level a character up since I hate grinding too much and not being on level is grating.
+### Based on Apocalyptech's mod. Multiplies EXP gain by 5x, and does not remove penalties from overleveling.
+
+# XP scaling
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/Experience/Att_BaseEnemyExperience.Att_BaseEnemyExperience:ValueResolver_PlayThroughDefinedAttributeValueResolver,Value.PlaythroughOne.BaseValueConstant,0,,12
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/Experience/Att_BaseEnemyExperience.Att_BaseEnemyExperience:ValueResolver_PlayThroughDefinedAttributeValueResolver,Value.PlaythroughTwoAndBeyond.BaseValueConstant,0,,10
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ExperienceGlobals.ExperienceGlobals,PlayerGuardianRankFormula.BaseValue,0,,20
+
+# Remove XP Scaling by level differences
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ExperienceGlobals.ExperienceGlobals,ExpScaleByLevelDifference,0,,((_jwp_arr_idx=0,LevelDifference=1,HigherLevelEnemyExpScale=1.5,LowerLevelEnemyExpScale=0.5),(_jwp_arr_idx=1,LevelDifference=2,HigherLevelEnemyExpScale=2,LowerLevelEnemyExpScale=0.45),(_jwp_arr_idx=2,LevelDifference=3,HigherLevelEnemyExpScale=2.5,LowerLevelEnemyExpScale=0.4),(_jwp_arr_idx=3,LevelDifference=4,HigherLevelEnemyExpScale=3,LowerLevelEnemyExpScale=0.35),(_jwp_arr_idx=4,LevelDifference=5,HigherLevelEnemyExpScale=3.5,LowerLevelEnemyExpScale=0.3),(_jwp_arr_idx=5,LevelDifference=6,HigherLevelEnemyExpScale=4,LowerLevelEnemyExpScale=0.25),(_jwp_arr_idx=6,LevelDifference=7,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.2),(_jwp_arr_idx=7,LevelDifference=8,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.15),(_jwp_arr_idx=8,LevelDifference=9,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.1),(_jwp_arr_idx=9,LevelDifference=10,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.09),(_jwp_arr_idx=10,LevelDifference=11,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.08),(_jwp_arr_idx=11,LevelDifference=12,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.07),(_jwp_arr_idx=12,LevelDifference=13,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.06),(_jwp_arr_idx=13,LevelDifference=14,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.05),(_jwp_arr_idx=14,LevelDifference=15,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.04),(_jwp_arr_idx=15,LevelDifference=16,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.03),(_jwp_arr_idx=16,LevelDifference=17,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.02),(_jwp_arr_idx=17,LevelDifference=18,HigherLevelEnemyExpScale=4.5,LowerLevelEnemyExpScale=0.01))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ExperienceGlobals.ExperienceGlobals,ExpAwardWeights.ExpAwardWeights[1].ExpWeight,0,,2.0
